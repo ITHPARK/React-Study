@@ -9,8 +9,8 @@ function App() {
       </div>
       <div className="game-info">
         game-info
-        <div>{}</div>
-        <div>{}</div>
+        <div></div>
+        <div></div>
       </div>
     </div>
   );

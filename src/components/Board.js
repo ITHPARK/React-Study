@@ -18,8 +18,15 @@ export class Board extends Component {
     }
   }
 
+  handleClick (i) {
+    const squares = this.state.squares.slice();
+    //slice에 아무것도 넣지 않으면 모든 배열을 복사
+    squares[i] = 'X';
+    this.setState({squares: squares})
+  }
+
   renderSquare (i) {
-      return <Square  value={this.state.squares[i]} />
+      return <Square  value={this.state.squares[i]} onClick ={() => this.handleClick(i)}/>
   }
 
   render() {
