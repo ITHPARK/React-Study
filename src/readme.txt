@@ -125,3 +125,20 @@ ex.
 ### react hooks
 
 
+class없이 state를 사용할 수 있는 새로운 기능
+
+
+*리액트의 생명주기 *
+
+componentDidMount : 리액트가 시작했을 때
+
+componentDidUpdate : 리액트가 시작하고 난 뒤에
+
+componentWillMount : 리액트 컴포넌트를 더 이상 사용하지 않을 때
+
+위 방식은 클래스형 컴포넌트애서 사용하는 것이다.
+
+
+React Hooks가 업데이트 되면서 함수형 컴포넌트에서도 생명주기를 사용할 수 있게 되었다.
+
+클래스형 컴포넌트에서 사용하던 위의 3개를 hooks에서는 useEffect로 한꺼번에 처리가 가능하다.

@@ -1,16 +1,17 @@
-import { Component } from "react";
-
+import React, { useState } from 'react'
 import "./Square.css";
 
 
-export class Square extends Component {
+const Square = ({onClick, value}) => {
+//Board 컴포넌트에서 상속 받은 매개변수
 
 
-    render () {
-        return (
-            <button className="square" onClick={()=> {this.props.onClick()}}>
-                {this.props.value}
-            </button>
-        )
-    }
+    return (
+        <button className="square" 
+        onClick={onClick}>
+            {value}
+        </button>
+    )
 } 
+
+export default Square;
